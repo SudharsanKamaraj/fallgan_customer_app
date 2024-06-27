@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/_lytMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/_5sdp">
+
+    <View
+        android:id="@+id/_imgProduct"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@color/background" />
+
+
+    <View
+        android:id="@+id/_tvProductName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_toEndOf="@+id/_imgProduct"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:id="@+id/_lytPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_tvProductName"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/_imgProduct"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/_tvMeasurement"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/background"
+            android:padding="1dp" />
+
+        <View
+            android:id="@+id/_tvPrice"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="5dp"
+            android:background="@color/background"
+            android:gravity="center_horizontal"
+            android:padding="1dp" />
+
+        <View
+            android:id="@+id/_tvOriginalPrice"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="3dp"
+            android:background="@color/background"
+            android:padding="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/_tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_lytPrice"
+        android:layout_toEndOf="@+id/_imgProduct"
+        android:gravity="center">
+
+        <View
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/background"
+            android:padding="1dp" />
+
+        <View
+            android:id="@+id/_btnMinusQuantity"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@color/background"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/ic_close"
+            android:backgroundTint="@color/background" />
+
+        <View
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@color/background" />
+
+        <View
+            android:id="@+id/_btnAddQuantity"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@color/background"
+            android:padding="5dp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/_tvTotalPrice"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@+id/_tvQuantity"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/background" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885878151379",
+    "project_id": "ecart-multi-vendor-custo-253ff",
+    "storage_bucket": "ecart-multi-vendor-custo-253ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885878151379:android:3180ed1913ba4c5b20dc26",
+        "android_client_info": {
+          "package_name": "wrteam.multivendor.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3KkV54O7xK368AA4YsiC_ik6Yu_uxDoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

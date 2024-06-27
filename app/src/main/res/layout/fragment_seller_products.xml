@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    shimmer:cardBackgroundColor="@color/transparent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/lytImg"
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:padding="@dimen/_2sdp">
+
+                            <ImageView
+                                android:id="@+id/imgTitle"
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:contentDescription="@string/app_name" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lytImg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:ellipsize="end"
+                            android:padding="@dimen/_5sdp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="@color/txt_color"
+                            android:textStyle="bold" />
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvTitle"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@id/lytImg"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_marginTop="@dimen/_10sdp"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:padding="@dimen/_5sdp"-->
+<!--                            android:textAppearance="@style/TextAppearance.AppCompat.Title"-->
+<!--                            android:textColor="@color/txt_color"-->
+<!--                            android:textStyle="bold"-->
+<!--                            shimmer:drawableEndCompat="@drawable/ic_share" />-->
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/categoryRecycleView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/bg_color" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_color" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        shimmer:shimmer_duration="1200">
+
+        <!-- Adding rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                shimmer:cardBackgroundColor="@color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/lytImg1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/bg_btn"
+                        android:backgroundTint="@color/background"
+                        android:padding="@dimen/_2sdp">
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/tvTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_below="@id/lytImg1"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/background"
+                        android:padding="@dimen/_5sdp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/lytList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/simmer_product_list" />
+
+                <include layout="@layout/simmer_product_list" />
+
+                <include layout="@layout/simmer_product_list" />
+
+                <include layout="@layout/simmer_product_list" />
+
+                <include layout="@layout/simmer_product_list" />
+
+                <include layout="@layout/simmer_product_list" />
+
+                <include layout="@layout/simmer_product_list" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/simmer_product_grid" />
+
+                <include layout="@layout/simmer_product_grid" />
+
+                <include layout="@layout/simmer_product_grid" />
+
+                <include layout="@layout/simmer_product_grid" />
+
+                <include layout="@layout/simmer_product_grid" />
+
+                <include layout="@layout/simmer_product_grid" />
+
+                <include layout="@layout/simmer_product_grid" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <TextView
+        android:id="@+id/tvAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_data_found"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

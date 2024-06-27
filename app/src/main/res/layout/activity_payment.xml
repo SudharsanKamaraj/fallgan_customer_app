@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar xmlns:local="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:contentInsetStartWithNavigation="0dp"
+        app:menu="@menu/main_menu"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/colorPrimary"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewHamburger"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_alignParentStart="true"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="@dimen/_8sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_arrow_back"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageView
+                        android:id="@+id/imageHome"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:layout_alignParentStart="true"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/logo" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_toEndOf="@+id/cardViewHamburger"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/hi_user"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/lytMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/confirmLyt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_2sdp">
+
+                <RelativeLayout
+                    android:id="@+id/lytAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:padding="@dimen/_4sdp">
+
+                    <TextView
+                        android:id="@+id/tvShippingDetailTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_toStartOf="@id/tvChangeAddress"
+                        android:padding="@dimen/_3sdp"
+                        android:text="@string/shipping_detail"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_location_large" />
+
+                    <TextView
+                        android:id="@+id/tvChangeAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/recyclerViewSingleAddress"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:background="@drawable/confirm_bg"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@string/change"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewSingleAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvShippingDetailTitle"
+                        android:layout_marginTop="@dimen/_3sdp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/paymentLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/deliveryTimeLyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_shadow"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:id="@+id/tvSelectDeliveryDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/delivery_date"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewDates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_color"
+                            android:padding="@dimen/_5sdp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewTimeSlot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_color"
+                            android:padding="@dimen/_5sdp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lytWallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:background="@drawable/card_shadow"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/imgWallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/_10sdp"
+                            app:srcCompat="@drawable/ic_wallet" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/chWallet"
+                            android:layout_toEndOf="@+id/imgWallet"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/wallet_balance"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvWltBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_gray" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/chWallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_4sdp">
+
+                    <TextView
+                        android:id="@+id/tvOrderSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_3sdp"
+                        android:text="@string/order_summary"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewCartItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvOrderSummary"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bg_color"
+                        android:nestedScrollingEnabled="false"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/confirmLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/lytCalculations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/total_amt"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/tvSubTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textAlignment="viewEnd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/delivery_charge"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/tvDeliveryCharge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textAlignment="viewEnd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytPromoDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@id/tvPromoCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/promo_discount"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/tvPromoDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textAlignment="viewEnd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytWalletAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/used_wallet"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/tvUsedWalletAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textAlignment="viewEnd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytSaveAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/you_saved"
+                        android:textAlignment="viewStart"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSaveAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textAlignment="viewEnd" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lytGrandTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    app:cardBackgroundColor="@color/colorPrimaryLight"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/grand_total"
+                            android:textAlignment="viewStart"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvGrandTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textAlignment="viewEnd"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/lytCalculations"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvPaymentMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="8"
+                    android:background="@drawable/card_shadow"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_down_arrow"
+                    app:drawableStartCompat="@drawable/ic_cod" />
+
+                <TextView
+                    android:id="@+id/tvProceedOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/card_shadow"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="@string/proceed"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_arrow_right" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytMainPaymentMethods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_transparent_black"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/lytPaymentMethods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/login_curve"
+                android:backgroundTint="@color/white"
+                android:padding="@dimen/_20sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgPaymentListClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/ic_close" />
+
+                <RadioGroup
+                    android:id="@+id/lytPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgPaymentListClose"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:divider="@color/light_gray"
+                    android:padding="@dimen/_2sdp"
+                    android:showDividers="middle">
+
+                    <RadioButton
+                        android:id="@+id/rbCOD"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_cod"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="cod"
+                        android:text="@string/cod_pay"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbRazorPay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_razorpay"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="RazorPay"
+                        android:text="@string/razor_payment"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbPayStack"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_paystack"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="Paystack"
+                        android:text="@string/paystack"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbFlutterWave"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_flutterwave"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="Flutterwave"
+                        android:text="@string/flutterwave"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbPayPal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_paypal"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="PayPal"
+                        android:text="@string/paypal_pay"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbMidTrans"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_midtrans"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="Midtrans"
+                        android:text="@string/midtrans"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbStripe"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_stripe"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="Stripe"
+                        android:text="@string/stripe"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbPayTm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_paytm"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="PayTm"
+                        android:text="@string/paytm"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbSslCommerz"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_sslecommerz"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="SSLCOMMERZ"
+                        android:text="@string/sslecommerz"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rbBankTransfer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:button="@drawable/ic_radio_button"
+                        android:drawableEnd="@drawable/ic_bank"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tag="bank_transfer"
+                        android:text="@string/bank_transfer"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+                </RadioGroup>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:shimmer_duration="1200">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+</RelativeLayout>

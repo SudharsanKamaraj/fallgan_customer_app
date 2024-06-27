@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lytMain"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/tvOrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/txt_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotalItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderID"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/tvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalItems"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:maxLines="1"
+        android:textColor="@color/gray" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/tvItems"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/lightest_gray" />
+
+    <TextView
+        android:id="@+id/tvOrderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/gray" />
+
+
+    <TextView
+        android:id="@+id/tvOrderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderDate"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/txt_color"
+        android:textStyle="bold" />
+</RelativeLayout>
