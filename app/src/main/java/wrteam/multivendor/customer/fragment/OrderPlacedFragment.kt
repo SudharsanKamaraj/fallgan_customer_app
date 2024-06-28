@@ -45,8 +45,6 @@ class OrderPlacedFragment : Fragment() {
         val params: MutableMap<String, String> = HashMap()
         params[Constant.REMOVE_FROM_CART] = Constant.GetVal
         params[Constant.USER_ID] = session.getData(Constant.ID).toString()
-        Log.d("TAG", "Constant.REMOVE_FROM_CART: "+Constant.GetVal)
-        Log.d("TAG", "Constant.USER_ID: "+session.getData(Constant.ID).toString())
         ApiConfig.requestToVolley(object : VolleyCallback {
                 override fun onSuccess(result: Boolean, response: String) {
                     if (result) {

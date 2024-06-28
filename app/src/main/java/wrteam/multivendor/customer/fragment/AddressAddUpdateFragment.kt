@@ -628,6 +628,7 @@ class AddressAddUpdateFragment : Fragment(),
         params[Constant.LIMIT] = "" + (Constant.LOAD_ITEM_LIMIT + 20)
         ApiConfig.requestToVolley(object : VolleyCallback {
             override fun onSuccess(result: Boolean, response: String) {
+                Log.i("CATEGORY_RES", response)
                 if (result) {
                     try {
                         val jsonObject = JSONObject(response)

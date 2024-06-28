@@ -815,13 +815,9 @@ class ApiConfig : Application() {
 
                 val params: MutableMap<String, String> = HashMap()
                 params[Constant.ADD_MULTIPLE_ITEMS] = Constant.GetVal
-                Log.e("ids", "Constant.ADD_MULTIPLE_ITEMS"+Constant.GetVal)
                 params[Constant.USER_ID] = session.getData(Constant.ID).toString()
-                Log.e("ids", "Constant.USER_ID"+session.getData(Constant.ID).toString())
                 params[Constant.PRODUCT_VARIANT_ID] = ids
-                Log.e("ids", "Constant.PRODUCT_VARIANT_ID"+ids)
                 params[Constant.QTY] = qty
-                Log.e("ids", "Constant.QTY"+qty)
 
                 requestToVolley(object : VolleyCallback {
                     override fun onSuccess(result: Boolean, response: String) {

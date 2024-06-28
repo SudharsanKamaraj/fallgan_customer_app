@@ -3,6 +3,7 @@ package wrteam.multivendor.customer.fragment
 import android.app.Activity
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
@@ -63,9 +64,11 @@ class CategoryFragment : Fragment() {
         val params: MutableMap<String, String> = HashMap()
         ApiConfig.requestToVolley(object : VolleyCallback {
                 override fun onSuccess(result: Boolean, response: String) {
+
                     if (result) {
                 try {
                     val `object` = JSONObject(response)
+
                     if (!`object`.getBoolean(Constant.ERROR)) {
                         val jsonArray = `object`.getJSONArray(Constant.DATA)
                         val gson = Gson()

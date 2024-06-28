@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.content.ContextCompat
@@ -59,6 +60,7 @@ class SplashActivity : Activity() {
         params[Constant.GET_SHIPPING_TYPE] = Constant.GetVal
         ApiConfig.requestToVolley(object : VolleyCallback {
             override fun onSuccess(result: Boolean, response: String) {
+
                 if (result) {
                     try {
                         val jsonObject = JSONObject(response)
@@ -71,6 +73,7 @@ class SplashActivity : Activity() {
                                 Constant.SHIPPING_TYPE,
                                 jsonObject.getString(Constant.SHIPPING_TYPE)
                             )
+                            Log.i("SPLASH", jsonObject.getString(Constant.maintenance))
                             if (jsonObject.getString(Constant.maintenance) != "0") {
                                 ApiConfig.openUnderMaintenanceDialog(activity)
                             } else {
