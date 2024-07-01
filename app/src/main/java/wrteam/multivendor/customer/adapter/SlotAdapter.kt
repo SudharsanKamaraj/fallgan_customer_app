@@ -1,17 +1,17 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
-import wrteam.multivendor.customer.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig
 import android.view.ViewGroup
 import android.widget.RadioButton
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.PaymentActivity
-import wrteam.multivendor.customer.model.Slot
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.PaymentActivity
+import com.gpn.customerapp.model.Slot
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.activity
+package com.gpn.customerapp.activity
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -15,13 +15,13 @@ import co.paystack.android.model.Card
 import co.paystack.android.model.Charge
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.databinding.ActivityPayStackBinding
-import wrteam.multivendor.customer.fragment.WalletTransactionFragment
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
+import com.gpn.customerapp.R
+import com.gpn.customerapp.databinding.ActivityPayStackBinding
+import com.gpn.customerapp.fragment.WalletTransactionFragment
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
 import java.util.*
 
 class PayStackActivity : AppCompatActivity() {

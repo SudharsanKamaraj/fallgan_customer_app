@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.helper
+package com.gpn.customerapp.helper
 
 import android.content.Intent
 import android.util.Log
@@ -6,8 +6,8 @@ import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.helper.Session.Companion.setCount
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.helper.Session.Companion.setCount
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
     override fun onMessageReceived(remoteMessage: RemoteMessage) {

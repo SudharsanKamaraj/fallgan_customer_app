@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -21,18 +21,18 @@ import com.google.gson.Gson
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.adapter.*
-import wrteam.multivendor.customer.databinding.FragmentHomeBinding
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.ApiConfig.Companion.requestToVolley
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
-import wrteam.multivendor.customer.model.Category
-import wrteam.multivendor.customer.model.Seller
-import wrteam.multivendor.customer.model.Slider
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.adapter.*
+import com.gpn.customerapp.databinding.FragmentHomeBinding
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig.Companion.requestToVolley
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
+import com.gpn.customerapp.model.Category
+import com.gpn.customerapp.model.Seller
+import com.gpn.customerapp.model.Slider
 import java.util.*
 
 class

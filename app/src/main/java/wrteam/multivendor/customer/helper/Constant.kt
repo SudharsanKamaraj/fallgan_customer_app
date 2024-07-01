@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.helper
+package com.gpn.customerapp.helper
 
 object Constant {
 

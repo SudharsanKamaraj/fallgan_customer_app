@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.adapters
+package com.gpn.customerapp.com.coursion.freakycoder.mediapicker.adapters
 
 
 import android.content.Context
@@ -9,8 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.helper.SquareLayout
+import com.gpn.customerapp.R
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.helper.SquareLayout
 
 class BucketsAdapter(private val bucketNames: List<String>,
                      private val bitmapList: List<String>,

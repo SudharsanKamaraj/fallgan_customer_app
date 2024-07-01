@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 
 import android.app.Activity
@@ -15,14 +15,14 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.google.gson.Gson
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.adapter.SellerAdapter
-import wrteam.multivendor.customer.databinding.FragmentSellerListBinding
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
-import wrteam.multivendor.customer.model.Seller
+import com.gpn.customerapp.R
+import com.gpn.customerapp.adapter.SellerAdapter
+import com.gpn.customerapp.databinding.FragmentSellerListBinding
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
+import com.gpn.customerapp.model.Seller
 
 class SellerListFragment : Fragment() {
     lateinit var binding: FragmentSellerListBinding

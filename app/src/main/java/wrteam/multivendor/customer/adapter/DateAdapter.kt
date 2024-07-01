@@ -1,18 +1,18 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
-import wrteam.multivendor.customer.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.PaymentActivity
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.model.BookingDate
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.PaymentActivity
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.model.BookingDate
 
 /**
  * Created by shree1 on 3/16/2017.

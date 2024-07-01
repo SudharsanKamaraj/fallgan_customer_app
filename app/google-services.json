@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:885878151379:android:3180ed1913ba4c5b20dc26",
         "android_client_info": {
-          "package_name": "wrteam.multivendor.customer"
+          "package_name": "com.gpn.customerapp"
         }
       },
       "oauth_client": [],

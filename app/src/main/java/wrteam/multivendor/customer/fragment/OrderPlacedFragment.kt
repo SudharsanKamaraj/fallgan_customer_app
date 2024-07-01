@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 
 import android.app.Activity
@@ -14,13 +14,13 @@ import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.databinding.FragmentOrderPlacedBinding
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.databinding.FragmentOrderPlacedBinding
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
 
 class OrderPlacedFragment : Fragment() {
     lateinit var binding: FragmentOrderPlacedBinding

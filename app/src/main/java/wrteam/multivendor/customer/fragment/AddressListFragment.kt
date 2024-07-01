@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -19,16 +19,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.activity.PaymentActivity
-import wrteam.multivendor.customer.adapter.AddressAdapter
-import wrteam.multivendor.customer.databinding.FragmentAddressListBinding
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
-import wrteam.multivendor.customer.model.Address
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.activity.PaymentActivity
+import com.gpn.customerapp.adapter.AddressAdapter
+import com.gpn.customerapp.databinding.FragmentAddressListBinding
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
+import com.gpn.customerapp.model.Address
 
 class AddressListFragment : Fragment() {
 

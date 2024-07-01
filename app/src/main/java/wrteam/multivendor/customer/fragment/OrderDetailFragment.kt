@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -17,7 +17,7 @@ import android.text.Html
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
-import wrteam.multivendor.customer.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -33,18 +33,18 @@ import com.google.gson.Gson
 import okhttp3.*
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.adapter.OrderItemsAdapter
-import wrteam.multivendor.customer.adapter.ProductImagesAdapter
-import wrteam.multivendor.customer.adapter.SelectedImagesAdapter
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.galleries.Gallery
-import wrteam.multivendor.customer.databinding.FragmentOrderDetailBinding
-import wrteam.multivendor.customer.helper.ApiConfig.Companion.requestToVolley
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
-import wrteam.multivendor.customer.model.OrderTracker
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.adapter.OrderItemsAdapter
+import com.gpn.customerapp.adapter.ProductImagesAdapter
+import com.gpn.customerapp.adapter.SelectedImagesAdapter
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.galleries.Gallery
+import com.gpn.customerapp.databinding.FragmentOrderDetailBinding
+import com.gpn.customerapp.helper.ApiConfig.Companion.requestToVolley
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
+import com.gpn.customerapp.model.OrderTracker
 import java.io.File
 import java.util.*
 

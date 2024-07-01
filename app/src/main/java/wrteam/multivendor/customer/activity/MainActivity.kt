@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.activity
+package com.gpn.customerapp.activity
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -27,11 +27,11 @@ import com.google.firebase.messaging.FirebaseMessagingService
 import com.razorpay.PaymentResultListener
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.adapter.OfferAdapter
-import wrteam.multivendor.customer.databinding.ActivityMainBinding
-import wrteam.multivendor.customer.fragment.*
-import wrteam.multivendor.customer.helper.*
+import com.gpn.customerapp.R
+import com.gpn.customerapp.adapter.OfferAdapter
+import com.gpn.customerapp.databinding.ActivityMainBinding
+import com.gpn.customerapp.fragment.*
+import com.gpn.customerapp.helper.*
 
 class MainActivity : AppCompatActivity(), PaymentResultListener {
 

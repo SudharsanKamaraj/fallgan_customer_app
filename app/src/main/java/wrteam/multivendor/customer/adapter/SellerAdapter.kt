@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.app.Activity
 import android.os.Bundle
@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.fragment.SellerProductsFragment
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.model.Seller
+import com.gpn.customerapp.R
+import com.gpn.customerapp.fragment.SellerProductsFragment
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.model.Seller
 
 class SellerAdapter(
     val activity: Activity,

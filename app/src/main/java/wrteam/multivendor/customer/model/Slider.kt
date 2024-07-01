@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.model
+package com.gpn.customerapp.model
 
 class Slider(val image: String) {
     lateinit var type: String

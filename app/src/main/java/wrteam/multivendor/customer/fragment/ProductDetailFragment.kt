@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -16,14 +16,14 @@ import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.google.gson.Gson
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.adapter.AdapterStyle1
-import wrteam.multivendor.customer.adapter.CustomAdapter
-import wrteam.multivendor.customer.adapter.SliderAdapter
-import wrteam.multivendor.customer.databinding.FragmentProductDetailBinding
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.model.*
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.adapter.AdapterStyle1
+import com.gpn.customerapp.adapter.CustomAdapter
+import com.gpn.customerapp.adapter.SliderAdapter
+import com.gpn.customerapp.databinding.FragmentProductDetailBinding
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.model.*
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*

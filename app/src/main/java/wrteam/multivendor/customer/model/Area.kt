@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.model
+package com.gpn.customerapp.model
 
 class Area {
     lateinit var id: String

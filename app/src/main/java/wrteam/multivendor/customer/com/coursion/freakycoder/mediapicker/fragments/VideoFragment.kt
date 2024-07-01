@@ -1,13 +1,13 @@
-package wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.fragments
+package com.gpn.customerapp.com.coursion.freakycoder.mediapicker.fragments
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.*
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.adapters.BucketsAdapter
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.galleries.OpenGallery
-import wrteam.multivendor.customer.R
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.adapters.BucketsAdapter
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.galleries.OpenGallery
+import com.gpn.customerapp.R
 import java.io.File
 
 class VideoFragment : androidx.fragment.app.Fragment() {

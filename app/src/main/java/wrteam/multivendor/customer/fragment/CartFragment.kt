@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
@@ -28,18 +28,18 @@ import com.facebook.shimmer.ShimmerFrameLayout
 import com.google.gson.Gson
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.LoginActivity
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.adapter.CartAdapter
-import wrteam.multivendor.customer.adapter.OfflineCartAdapter
-import wrteam.multivendor.customer.adapter.OfflineSaveForLaterAdapter
-import wrteam.multivendor.customer.adapter.SaveForLaterAdapter
-import wrteam.multivendor.customer.databinding.FragmentCartBinding
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.model.Cart
-import wrteam.multivendor.customer.model.OfflineCart
-import wrteam.multivendor.customer.model.PromoCode
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.LoginActivity
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.adapter.CartAdapter
+import com.gpn.customerapp.adapter.OfflineCartAdapter
+import com.gpn.customerapp.adapter.OfflineSaveForLaterAdapter
+import com.gpn.customerapp.adapter.SaveForLaterAdapter
+import com.gpn.customerapp.databinding.FragmentCartBinding
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.model.Cart
+import com.gpn.customerapp.model.OfflineCart
+import com.gpn.customerapp.model.PromoCode
 
 @SuppressLint("SetTextI18n")
 class CartFragment : Fragment() {

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -15,11 +15,11 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.adapter.ProductLoadMoreAdapter
-import wrteam.multivendor.customer.databinding.FragmentFavoriteBinding
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.model.Product
+import com.gpn.customerapp.R
+import com.gpn.customerapp.adapter.ProductLoadMoreAdapter
+import com.gpn.customerapp.databinding.FragmentFavoriteBinding
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.model.Product
 
 @SuppressLint("NotifyDataSetChanged")
 class FavoriteFragment : Fragment() {

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -6,7 +6,7 @@ import android.graphics.Paint
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
-import wrteam.multivendor.customer.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ProgressBar
@@ -15,11 +15,11 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.fragment.CartFragment
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.model.Cart
+import com.gpn.customerapp.R
+import com.gpn.customerapp.fragment.CartFragment
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.model.Cart
 
 @SuppressLint("NotifyDataSetChanged")
 class SaveForLaterAdapter(val activity: Activity) :

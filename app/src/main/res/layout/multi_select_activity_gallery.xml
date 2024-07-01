@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.galleries.Gallery">
+    tools:context="com.gpn.customerapp.com.coursion.freakycoder.mediapicker.galleries.Gallery">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

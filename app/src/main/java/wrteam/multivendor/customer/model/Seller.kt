@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.model
+package com.gpn.customerapp.model
 
 class Seller {
     lateinit var id: String

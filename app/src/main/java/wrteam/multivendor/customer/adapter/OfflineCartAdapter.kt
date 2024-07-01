@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -17,15 +17,15 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.android.material.snackbar.Snackbar
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.fragment.CartFragment
-import wrteam.multivendor.customer.fragment.CartFragment.Companion.offlineCarts
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.DatabaseHelper
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.model.OfflineCart
-import wrteam.multivendor.customer.model.OfflineItems
+import com.gpn.customerapp.R
+import com.gpn.customerapp.fragment.CartFragment
+import com.gpn.customerapp.fragment.CartFragment.Companion.offlineCarts
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.DatabaseHelper
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.model.OfflineCart
+import com.gpn.customerapp.model.OfflineItems
 
 @SuppressLint("NotifyDataSetChanged")
 class OfflineCartAdapter(activity: Activity) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {

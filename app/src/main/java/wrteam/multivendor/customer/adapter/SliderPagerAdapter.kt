@@ -1,9 +1,9 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import wrteam.multivendor.customer.fragment.SliderItemFragment
+import com.gpn.customerapp.fragment.SliderItemFragment
 
 class SliderPagerAdapter(fm: FragmentManager, behavior: Int) :
     FragmentPagerAdapter(fm, behavior) {

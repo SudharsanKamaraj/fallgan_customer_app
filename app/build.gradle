@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 33
     defaultConfig {
-        applicationId "wrteam.multivendor.customer"
+        applicationId "com.gpn.customerapp"
         minSdkVersion 27
         targetSdkVersion 33
         versionCode 10

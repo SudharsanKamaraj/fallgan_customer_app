@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -36,18 +36,18 @@ import com.google.gson.Gson
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.adapter.AddressAdapter
-import wrteam.multivendor.customer.databinding.FragmentAddressAddUpdateBinding
-import wrteam.multivendor.customer.fragment.AddressListFragment.Companion.addressAdapter
-import wrteam.multivendor.customer.fragment.AddressListFragment.Companion.addresses
-import wrteam.multivendor.customer.fragment.AddressListFragment.Companion.recyclerView
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.helper.ApiConfig.Companion.getAddress
-import wrteam.multivendor.customer.model.Address
-import wrteam.multivendor.customer.model.Area
-import wrteam.multivendor.customer.model.City
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.adapter.AddressAdapter
+import com.gpn.customerapp.databinding.FragmentAddressAddUpdateBinding
+import com.gpn.customerapp.fragment.AddressListFragment.Companion.addressAdapter
+import com.gpn.customerapp.fragment.AddressListFragment.Companion.addresses
+import com.gpn.customerapp.fragment.AddressListFragment.Companion.recyclerView
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.helper.ApiConfig.Companion.getAddress
+import com.gpn.customerapp.model.Address
+import com.gpn.customerapp.model.Area
+import com.gpn.customerapp.model.City
 
 @SuppressLint("NotifyDataSetChanged", "SetTextI18n", "ClickableViewAccessibility")
 class AddressAddUpdateFragment : Fragment(),

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.helper
+package com.gpn.customerapp.helper
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -45,11 +45,11 @@ import io.jsonwebtoken.SignatureAlgorithm
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.adapter.OfferAdapter
-import wrteam.multivendor.customer.model.HomeOffer
-import wrteam.multivendor.customer.model.Product
-import wrteam.multivendor.customer.model.Slider
+import com.gpn.customerapp.R
+import com.gpn.customerapp.adapter.OfferAdapter
+import com.gpn.customerapp.model.HomeOffer
+import com.gpn.customerapp.model.Product
+import com.gpn.customerapp.model.Slider
 import java.security.Key
 import java.text.DateFormat
 import java.text.SimpleDateFormat

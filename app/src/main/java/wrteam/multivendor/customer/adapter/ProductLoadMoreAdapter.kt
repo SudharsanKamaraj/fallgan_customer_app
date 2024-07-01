@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -16,15 +16,15 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
 import com.bumptech.glide.Glide
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.fragment.FavoriteFragment
-import wrteam.multivendor.customer.fragment.ProductDetailFragment
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.DatabaseHelper
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.model.PriceVariation
-import wrteam.multivendor.customer.model.Product
+import com.gpn.customerapp.R
+import com.gpn.customerapp.fragment.FavoriteFragment
+import com.gpn.customerapp.fragment.ProductDetailFragment
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.DatabaseHelper
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.model.PriceVariation
+import com.gpn.customerapp.model.Product
 
 @SuppressLint("NotifyDataSetChanged")
 class ProductLoadMoreAdapter(

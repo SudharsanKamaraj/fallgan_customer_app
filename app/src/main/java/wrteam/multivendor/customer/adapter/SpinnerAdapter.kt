@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.helper.Constant
+import com.gpn.customerapp.R
+import com.gpn.customerapp.helper.Constant
 
 class CustomAdapter(internal var activity: Activity, private var variantNames: Array<String?>, private var variantsStockStatus: Array<String?>) : BaseAdapter() {
     private var inflater: LayoutInflater = LayoutInflater.from(activity)

@@ -1,18 +1,18 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.app.Activity
 import java.util.ArrayList
-import wrteam.multivendor.customer.model.TrackTimeLine
+import com.gpn.customerapp.model.TrackTimeLine
 import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import wrteam.multivendor.customer.R
+import com.gpn.customerapp.R
 import android.text.Html
 import android.view.View
 import android.widget.TextView
 import android.widget.RelativeLayout
-import wrteam.multivendor.customer.helper.Session
+import com.gpn.customerapp.helper.Session
 
 class OrderTimeLineAdapter(val activity: Activity, val trackTimeLines: ArrayList<TrackTimeLine>) :
     RecyclerView.Adapter<OrderTimeLineAdapter.CartItemHolder>() {

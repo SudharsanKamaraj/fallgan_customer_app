@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -12,7 +12,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import wrteam.multivendor.customer.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig
 import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
@@ -20,11 +20,11 @@ import com.bumptech.glide.Glide
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.LoginActivity
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.databinding.FragmentDrawerBinding
-import wrteam.multivendor.customer.helper.*
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.LoginActivity
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.databinding.FragmentDrawerBinding
+import com.gpn.customerapp.helper.*
 
 class DrawerFragment : Fragment() {
     lateinit var binding: FragmentDrawerBinding

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -22,11 +22,11 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import okhttp3.*
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.galleries.Gallery
-import wrteam.multivendor.customer.databinding.FragmentProfileBinding
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.helper.ApiConfig.Companion.createJWT
+import com.gpn.customerapp.R
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.galleries.Gallery
+import com.gpn.customerapp.databinding.FragmentProfileBinding
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.helper.ApiConfig.Companion.createJWT
 import java.io.File
 
 class ProfileFragment : Fragment() {

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.fragment.CartFragment
-import wrteam.multivendor.customer.fragment.HomeFragment
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.model.PinCode
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.fragment.CartFragment
+import com.gpn.customerapp.fragment.HomeFragment
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.model.PinCode
 
 class PinCodeAdapter(activity: Activity, pinCodes: ArrayList<PinCode?>, from: String) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {

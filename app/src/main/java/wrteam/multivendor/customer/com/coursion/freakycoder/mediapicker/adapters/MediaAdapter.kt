@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.adapters
+package com.gpn.customerapp.com.coursion.freakycoder.mediapicker.adapters
 
 
 import android.content.Context
@@ -9,7 +9,7 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
-import wrteam.multivendor.customer.R
+import com.gpn.customerapp.R
 
 class MediaAdapter(private val bitmapList: List<String>,
                    private val selected: List<Boolean>,

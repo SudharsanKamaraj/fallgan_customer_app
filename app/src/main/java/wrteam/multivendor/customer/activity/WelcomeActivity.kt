@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.activity
+package com.gpn.customerapp.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,10 +8,10 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.google.android.material.tabs.TabLayout
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.adapter.SliderPagerAdapter
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
+import com.gpn.customerapp.R
+import com.gpn.customerapp.adapter.SliderPagerAdapter
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var viewPager: ViewPager

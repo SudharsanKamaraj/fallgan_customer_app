@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.app.Activity
 import android.os.Bundle
@@ -12,13 +12,13 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.json.JSONArray
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.adapter.SectionAdapter.SectionHolder
-import wrteam.multivendor.customer.fragment.ProductListFragment
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.model.Category
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.adapter.SectionAdapter.SectionHolder
+import com.gpn.customerapp.fragment.ProductListFragment
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.model.Category
 
 class SectionAdapter(activity: Activity, sectionList: ArrayList<Category>, jsonArray: JSONArray) :
     RecyclerView.Adapter<SectionHolder>() {

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -8,16 +8,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
-import wrteam.multivendor.customer.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.databinding.FragmentReferEarnBinding
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
+import com.gpn.customerapp.R
+import com.gpn.customerapp.databinding.FragmentReferEarnBinding
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
 
 class ReferEarnFragment : Fragment() {
     lateinit var binding: FragmentReferEarnBinding

@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -19,11 +19,11 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.databinding.FragmentWebViewBinding
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.VolleyCallback
+import com.gpn.customerapp.R
+import com.gpn.customerapp.databinding.FragmentWebViewBinding
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.VolleyCallback
 
 class WebViewFragment : Fragment() {
     lateinit var binding:FragmentWebViewBinding

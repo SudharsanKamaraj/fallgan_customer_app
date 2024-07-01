@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.helper
+package com.gpn.customerapp.helper
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
-import wrteam.multivendor.customer.R
+import com.gpn.customerapp.R
 
 class ProgressDisplay @SuppressLint("UseCompatLoadingForDrawables") constructor(context: Activity) {
     fun showProgress() {

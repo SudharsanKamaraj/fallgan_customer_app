@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.activity
+package com.gpn.customerapp.activity
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -36,17 +36,17 @@ import com.sslcommerz.library.payment.viewmodel.listener.OnPaymentResultListener
 import com.sslcommerz.library.payment.viewmodel.management.PayUsingSSLCommerz
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.adapter.AddressAdapter
-import wrteam.multivendor.customer.adapter.CheckoutItemListAdapter
-import wrteam.multivendor.customer.adapter.DateAdapter
-import wrteam.multivendor.customer.adapter.SlotAdapter
-import wrteam.multivendor.customer.databinding.ActivityPaymentBinding
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.model.Address
-import wrteam.multivendor.customer.model.BookingDate
-import wrteam.multivendor.customer.model.Cart
-import wrteam.multivendor.customer.model.Slot
+import com.gpn.customerapp.R
+import com.gpn.customerapp.adapter.AddressAdapter
+import com.gpn.customerapp.adapter.CheckoutItemListAdapter
+import com.gpn.customerapp.adapter.DateAdapter
+import com.gpn.customerapp.adapter.SlotAdapter
+import com.gpn.customerapp.databinding.ActivityPaymentBinding
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.model.Address
+import com.gpn.customerapp.model.BookingDate
+import com.gpn.customerapp.model.Cart
+import com.gpn.customerapp.model.Slot
 import java.io.Serializable
 import java.text.SimpleDateFormat
 import java.util.*

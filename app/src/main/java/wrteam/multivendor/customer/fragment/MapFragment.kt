@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 
 import android.annotation.SuppressLint
@@ -27,11 +27,11 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.helper.ApiConfig.Companion.getAddress
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.GPSTracker
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.helper.ApiConfig.Companion.getAddress
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.GPSTracker
 import java.util.*
 
 

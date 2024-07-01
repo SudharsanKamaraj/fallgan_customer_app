@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.model
+package com.gpn.customerapp.model
 
 import java.io.Serializable
 import kotlin.properties.Delegates

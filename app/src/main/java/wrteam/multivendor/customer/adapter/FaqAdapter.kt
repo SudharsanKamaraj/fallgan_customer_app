@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -11,8 +11,8 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.model.Faq
+import com.gpn.customerapp.R
+import com.gpn.customerapp.model.Faq
 
 class FaqAdapter(activity: Activity, faqs: ArrayList<Faq?>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {

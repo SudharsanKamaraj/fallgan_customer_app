@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.helper
+package com.gpn.customerapp.com.coursion.freakycoder.mediapicker.helper
 
 import android.content.res.ColorStateList
 import com.google.android.material.floatingactionbutton.FloatingActionButton

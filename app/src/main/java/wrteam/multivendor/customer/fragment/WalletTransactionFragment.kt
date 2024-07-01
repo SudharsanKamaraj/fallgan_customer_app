@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -35,13 +35,13 @@ import com.sslcommerz.library.payment.viewmodel.listener.OnPaymentResultListener
 import com.sslcommerz.library.payment.viewmodel.management.PayUsingSSLCommerz
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.*
-import wrteam.multivendor.customer.adapter.WalletTransactionAdapter
-import wrteam.multivendor.customer.databinding.FragmentWalletTransectionBinding
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.model.Address
-import wrteam.multivendor.customer.model.WalletTransaction
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.*
+import com.gpn.customerapp.adapter.WalletTransactionAdapter
+import com.gpn.customerapp.databinding.FragmentWalletTransectionBinding
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.model.Address
+import com.gpn.customerapp.model.WalletTransaction
 import java.io.Serializable
 import kotlin.math.roundToLong
 

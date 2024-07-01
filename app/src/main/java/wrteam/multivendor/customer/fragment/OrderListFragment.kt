@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.fragment
+package com.gpn.customerapp.fragment
 
 
 import android.app.Activity
@@ -15,14 +15,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.adapter.OrderListAdapter
-import wrteam.multivendor.customer.databinding.FragmentTrackOrderBinding
-import wrteam.multivendor.customer.helper.ApiConfig.Companion.requestToVolley
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
-import wrteam.multivendor.customer.model.OrderTracker
+import com.gpn.customerapp.R
+import com.gpn.customerapp.adapter.OrderListAdapter
+import com.gpn.customerapp.databinding.FragmentTrackOrderBinding
+import com.gpn.customerapp.helper.ApiConfig.Companion.requestToVolley
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
+import com.gpn.customerapp.model.OrderTracker
 
 class OrderListFragment : Fragment() {
     lateinit var binding: FragmentTrackOrderBinding

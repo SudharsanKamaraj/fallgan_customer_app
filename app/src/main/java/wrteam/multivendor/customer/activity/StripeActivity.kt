@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.activity
+package com.gpn.customerapp.activity
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -23,12 +23,12 @@ import com.stripe.android.model.StripeIntent
 import com.stripe.android.view.CardInputWidget
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.databinding.ActivityStripePaymentBinding
-import wrteam.multivendor.customer.helper.ApiConfig
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.helper.VolleyCallback
+import com.gpn.customerapp.R
+import com.gpn.customerapp.databinding.ActivityStripePaymentBinding
+import com.gpn.customerapp.helper.ApiConfig
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.helper.VolleyCallback
 import java.lang.ref.WeakReference
 import java.text.SimpleDateFormat
 import java.util.*

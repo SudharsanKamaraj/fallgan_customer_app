@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.activity
+package com.gpn.customerapp.activity
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -21,9 +21,9 @@ import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.databinding.ActivityWebViewBinding
-import wrteam.multivendor.customer.helper.*
+import com.gpn.customerapp.R
+import com.gpn.customerapp.databinding.ActivityWebViewBinding
+import com.gpn.customerapp.helper.*
 import java.text.SimpleDateFormat
 import java.util.*
 

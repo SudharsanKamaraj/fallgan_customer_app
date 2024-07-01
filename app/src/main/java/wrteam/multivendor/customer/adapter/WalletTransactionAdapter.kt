@@ -1,11 +1,11 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
-import wrteam.multivendor.customer.helper.ApiConfig
+import com.gpn.customerapp.helper.ApiConfig
 import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -13,10 +13,10 @@ import androidx.annotation.RequiresApi
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.helper.Session
-import wrteam.multivendor.customer.model.WalletTransaction
+import com.gpn.customerapp.R
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.helper.Session
+import com.gpn.customerapp.model.WalletTransaction
 
 class WalletTransactionAdapter(
     activity: Activity,

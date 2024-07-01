@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.activity
+package com.gpn.customerapp.activity
 
 import `in`.aabhasjindal.otptextview.OtpTextView
 import android.annotation.SuppressLint
@@ -30,9 +30,9 @@ import com.google.firebase.auth.PhoneAuthProvider.ForceResendingToken
 import com.google.firebase.auth.PhoneAuthProvider.OnVerificationStateChangedCallbacks
 import org.json.JSONException
 import org.json.JSONObject
-import wrteam.multivendor.customer.databinding.ActivityLoginBinding
-import wrteam.multivendor.customer.helper.*
-import wrteam.multivendor.customer.R
+import com.gpn.customerapp.databinding.ActivityLoginBinding
+import com.gpn.customerapp.helper.*
+import com.gpn.customerapp.R
 import java.text.DecimalFormat
 import java.text.NumberFormat
 import java.util.*

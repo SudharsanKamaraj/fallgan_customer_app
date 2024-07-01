@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.helper
+package com.gpn.customerapp.helper
 
 import android.annotation.SuppressLint
 import android.app.Notification
@@ -12,7 +12,7 @@ import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.media.RingtoneManager
 import androidx.core.app.NotificationCompat
-import wrteam.multivendor.customer.R
+import com.gpn.customerapp.R
 import java.io.IOException
 import java.io.InputStream
 import java.net.HttpURLConnection

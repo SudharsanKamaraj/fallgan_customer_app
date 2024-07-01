@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.galleries
+package com.gpn.customerapp.com.coursion.freakycoder.mediapicker.galleries
 
 import android.content.Context
 import android.os.Bundle
@@ -11,11 +11,11 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.adapters.MediaAdapter
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.fragments.ImageFragment
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.fragments.VideoFragment
-import wrteam.multivendor.customer.com.coursion.freakycoder.mediapicker.helper.Util
+import com.gpn.customerapp.R
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.adapters.MediaAdapter
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.fragments.ImageFragment
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.fragments.VideoFragment
+import com.gpn.customerapp.com.coursion.freakycoder.mediapicker.helper.Util
 
 open class OpenGallery : AppCompatActivity() {
 

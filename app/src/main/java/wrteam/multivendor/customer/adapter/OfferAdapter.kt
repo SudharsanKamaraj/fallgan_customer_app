@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -20,12 +20,12 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
-import wrteam.multivendor.customer.fragment.ProductDetailFragment
-import wrteam.multivendor.customer.fragment.SubCategoryFragment
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.model.HomeOffer
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
+import com.gpn.customerapp.fragment.ProductDetailFragment
+import com.gpn.customerapp.fragment.SubCategoryFragment
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.model.HomeOffer
 import java.util.*
 
 class OfferAdapter(var activity: Activity, private val offerList: ArrayList<HomeOffer>) :

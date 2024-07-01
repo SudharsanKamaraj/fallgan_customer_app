@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.helper
+package com.gpn.customerapp.helper
 
 import android.app.Activity
 import android.content.Context
@@ -7,8 +7,8 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import androidx.appcompat.app.AlertDialog
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.activity.MainActivity
+import com.gpn.customerapp.R
+import com.gpn.customerapp.activity.MainActivity
 
 class Session(activity: Context) {
     private val privateMode = 0

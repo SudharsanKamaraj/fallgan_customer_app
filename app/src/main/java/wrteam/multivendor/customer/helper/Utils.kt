@@ -1,11 +1,11 @@
-package wrteam.multivendor.customer.helper
+package com.gpn.customerapp.helper
 
 import android.annotation.SuppressLint
 import android.text.method.PasswordTransformationMethod
 import android.view.MotionEvent
 import android.view.View
 import android.widget.EditText
-import wrteam.multivendor.customer.R
+import com.gpn.customerapp.R
 
 object Utils {
     @SuppressLint("ClickableViewAccessibility")

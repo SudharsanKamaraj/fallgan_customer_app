@@ -1,4 +1,4 @@
-package wrteam.multivendor.customer.adapter
+package com.gpn.customerapp.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -17,11 +17,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import wrteam.multivendor.customer.R
-import wrteam.multivendor.customer.fragment.ProductDetailFragment
-import wrteam.multivendor.customer.fragment.SubCategoryFragment
-import wrteam.multivendor.customer.helper.Constant
-import wrteam.multivendor.customer.model.*
+import com.gpn.customerapp.R
+import com.gpn.customerapp.fragment.ProductDetailFragment
+import com.gpn.customerapp.fragment.SubCategoryFragment
+import com.gpn.customerapp.helper.Constant
+import com.gpn.customerapp.model.*
 
 class NotificationAdapter(activity: Activity, Notifications: ArrayList<Notification?>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
