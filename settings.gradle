@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "eCart Multi Vendor Customer"
+rootProject.name = "fallgan customer app"

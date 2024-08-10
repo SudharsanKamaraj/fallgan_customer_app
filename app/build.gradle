@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 33
     defaultConfig {
-        applicationId "com.gpn.customerapp"
+        applicationId "com.fallgan.customerapp"
         minSdkVersion 27
         targetSdkVersion 33
         versionCode 10

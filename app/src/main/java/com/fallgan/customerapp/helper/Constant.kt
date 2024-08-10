@@ -7,8 +7,8 @@ object Constant {
     //MODIFICATION PART
 
     //Admin panel url with it would be necessary to put "/"(slash) at end of the url (https://admin.panel.url/)
-  //const val MainBaseUrl = "https://gpn.graymatterworks.com/"
-  const val MainBaseUrl = "https://gpn.graymatterworks.com/"
+  //const val MainBaseUrl = "https://Fallgan Customer App.graymatterworks.com/"
+  const val MainBaseUrl = "https://fallgan.graymatterworks.com/"
 
     //Admin panel url or ecart multivendor website url (if exist) url with it would be necessary to put "/"(slash) at end of the url (https://admin.panel.url/)
     const val WebSiteUrl = "ecart_website_url_or_admin_panel_url_here"

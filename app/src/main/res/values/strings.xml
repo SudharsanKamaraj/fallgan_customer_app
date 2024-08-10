@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gpn</string>
+    <string name="app_name">Fallgan Customer App</string>
 
     <!--  *************************************************************************************************************  -->
     <!--     For privacy policy and terms and condition whatever you set words in privacy_policy and terms_conditions that words must be contain in msg_privacy_terms.Other wise app will crash -->

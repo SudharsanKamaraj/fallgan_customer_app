@@ -144,7 +144,7 @@
                 app:drawableGravity="end"
                 app:separator="spaces" />
 
-            <!--<com.gpn.customerapp.ui.CreditCardEditText
+            <!--<com.fallgan.customerapp.ui.CreditCardEditText
                 android:id="@+id/edtCardNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

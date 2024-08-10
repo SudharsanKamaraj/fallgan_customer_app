@@ -1,21 +1,40 @@
 {
   "project_info": {
-    "project_number": "885878151379",
-    "project_id": "ecart-multi-vendor-custo-253ff",
-    "storage_bucket": "ecart-multi-vendor-custo-253ff.appspot.com"
+    "project_number": "806844618259",
+    "project_id": "next-gen-74543",
+    "storage_bucket": "next-gen-74543.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:885878151379:android:3180ed1913ba4c5b20dc26",
+        "mobilesdk_app_id": "1:806844618259:android:a2cad31b353fc6a72951e6",
         "android_client_info": {
-          "package_name": "com.gpn.customerapp"
+          "package_name": "com.fallgan.customerapp"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA3KkV54O7xK368AA4YsiC_ik6Yu_uxDoA"
+          "current_key": "AIzaSyDitn6O8KPyQ9qGjvh9Tgn3-PJNm15xiBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806844618259:android:fc147a397ed084cc2951e6",
+        "android_client_info": {
+          "package_name": "com.nextgen.nextgen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDitn6O8KPyQ9qGjvh9Tgn3-PJNm15xiBE"
         }
       ],
       "services": {

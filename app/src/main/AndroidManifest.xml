@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.gpn.customerapp">
+    package="com.fallgan.customerapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -25,7 +25,7 @@
     </queries>
 
     <application
-        android:name="com.gpn.customerapp.helper.ApiConfig"
+        android:name="com.fallgan.customerapp.helper.ApiConfig"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -35,11 +35,11 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:usesCleartextTraffic,android:allowBackup,android:theme">
 
-        <activity android:name="com.gpn.customerapp.activity.WelcomeActivity" />
+        <activity android:name="com.fallgan.customerapp.activity.WelcomeActivity" />
 
-        <activity android:name="com.gpn.customerapp.activity.PaymentActivity" />
+        <activity android:name="com.fallgan.customerapp.activity.PaymentActivity" />
 
-        <activity android:name="com.gpn.customerapp.activity.PayStackActivity" />
+        <activity android:name="com.fallgan.customerapp.activity.PayStackActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -51,12 +51,12 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name="com.gpn.customerapp.activity.MainActivity" />
+        <activity android:name="com.fallgan.customerapp.activity.MainActivity" />
 
-        <activity android:name="com.gpn.customerapp.activity.LoginActivity" />
+        <activity android:name="com.fallgan.customerapp.activity.LoginActivity" />
 
         <activity
-            android:name="com.gpn.customerapp.activity.SplashActivity"
+            android:name="com.fallgan.customerapp.activity.SplashActivity"
             android:exported="true">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.MAIN" />
@@ -74,21 +74,21 @@
         </activity>
 
         <activity
-            android:name="com.gpn.customerapp.com.coursion.freakycoder.mediapicker.galleries.Gallery"
+            android:name="com.fallgan.customerapp.com.coursion.freakycoder.mediapicker.galleries.Gallery"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.gpn.customerapp.com.coursion.freakycoder.mediapicker.galleries.OpenGallery"
+            android:name="com.fallgan.customerapp.com.coursion.freakycoder.mediapicker.galleries.OpenGallery"
             android:theme="@style/AppTheme" />
 
-        <activity android:name="com.gpn.customerapp.activity.PayPalWebActivity" />
+        <activity android:name="com.fallgan.customerapp.activity.PayPalWebActivity" />
 
         <activity
 
-            android:name="com.gpn.customerapp.activity.MidtransActivity" />
+            android:name="com.fallgan.customerapp.activity.MidtransActivity" />
 
         <activity
 
-            android:name="com.gpn.customerapp.activity.StripeActivity" />
+            android:name="com.fallgan.customerapp.activity.StripeActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -129,7 +129,7 @@
         </provider>
 
         <service
-            android:name="com.gpn.customerapp.helper.MyFirebaseMessagingService"
+            android:name="com.fallgan.customerapp.helper.MyFirebaseMessagingService"
             android:stopWithTask="false"
             android:exported="false">
             <intent-filter>

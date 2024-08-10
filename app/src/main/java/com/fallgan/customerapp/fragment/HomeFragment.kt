@@ -474,7 +474,7 @@ private fun registerFcm(token: String) {
         try {
             sellerArrayList = ArrayList()
             if (jsonArray.length() > 0) {
-                binding.lytSeller.visibility = View.VISIBLE
+                binding.lytSeller.visibility = View.GONE
                 for (i in 0 until jsonArray.length()) {
                     val jsonObject = jsonArray.getJSONObject(i)
                     val seller = Gson().fromJson(jsonObject.toString(), Seller::class.java)
